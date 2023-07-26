@@ -1,0 +1,46 @@
+:root {
+    /* mobile */
+    --color-1 : #cdb4db ;
+     /* tablet */
+    --color-2 : #fff1e6 ;
+     /* laptop */
+    --color-3 : #52b788 ;
+     /* desktop */ 
+    --color-4 : #bee1e6 ; 
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 35px;
+    font-family: sans-serif;
+}
+
+.container{
+    height: 100vh;
+}
+
+#size{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    color: red;
+}
+
+.container{
+    display: grid;
+    place-items: center;
+    background-color: var(--color-4);
+}
+
+@media screen and (max-width:768px){
+    .container{
+        background-color: var(--color-2);
+    }
+}
