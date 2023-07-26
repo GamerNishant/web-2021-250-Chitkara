@@ -29,18 +29,51 @@ body{
     top: 60%;
     left: 50%;
     transform: translateX(-50%);
-
     color: red;
 }
+
 
 .container{
     display: grid;
     place-items: center;
-    background-color: var(--color-4);
 }
 
-@media screen and (max-width:768px){
+/* Heirarchy should be in desc order, sbse badi screen sbse pehle */
+
+@media screen and (min-width:1025px) {
+    .container{
+        background-color : var(--color-4)
+    }
+}
+
+@media (min-width:768px) and (max-width: 1024px) {
+    .container{
+        background-color : var(--color-3)
+    }
+}
+
+
+@media (min-width:425px) and (max-width:768px){
     .container{
         background-color: var(--color-2);
     }
+    .text{
+        font-size: 30px;
+    }
+    #size{
+        font-size: 30px;
+    }
 }
+
+@media screen and (max-width:426px) {
+    .container{
+        background-color: var(--color-1);
+    }
+    .text{
+        font-size: 20px;
+    }
+    #size{
+        font-size: 20px;
+    }
+}
+

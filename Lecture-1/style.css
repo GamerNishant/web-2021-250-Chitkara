@@ -151,3 +151,33 @@ hr{
     margin-bottom: 15px;
     padding: 0;
 }
+
+/* ===============Media queries ==================== */
+
+/* =========for laptop=============== */
+@media screen and (max-width : 1024px){
+    nav ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    nav ul li{
+        margin-left: 50px;
+    }
+}
+
+/* ===========for mobile========================= */
+@media screen and (max-width : 425px){
+    
+    nav ul{
+        
+        align-items: center;
+        justify-content: center;
+        
+    }
+    nav ul li{
+        display:none;
+        margin-left: 20px;
+    }
+}
