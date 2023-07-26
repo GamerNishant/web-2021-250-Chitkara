@@ -1,0 +1,183 @@
+/* KeyFrames Starts Here */
+
+@keyframes MeraName {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateX(-100px);
+    }
+
+    50% {
+        transform: translateY(-100px);
+    }
+
+    75%{
+        transform: translateX(100px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateX(-100px);
+    }
+
+    50% {
+        transform: translateY(100px);
+    }
+
+    75%{
+        transform: translateX(100px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveBox{
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(200px);
+    }
+}
+
+@keyframes fadeInOut{
+    0%,100%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+}
+
+@keyframes rotateElement {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes scaleElement{
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(2);
+    }
+}
+
+/*  Keyframes end here */
+
+.scale{
+    width: 100px;
+    height: 100px;
+    background-color: #f39c12;
+    margin-left: 500px;
+    margin-bottom: 100px;
+    /* code for attaching animation here */
+    animation-name: scaleElement;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    /* animation-timing-function: linear; */
+}
+
+.rotate{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+    width: 100px;
+    height: 100px;
+    background-color: #2ecc71;
+    border-bottom: red;
+    border-radius: 50%;
+
+    animation-name: rotateElement;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.fade-in-fade-out{
+    width: 100px;
+    height: 100px;
+    background-color: #e74c3c;
+    animation-name: fadeInOut;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+.box{
+    margin-top: 100px ;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #349934;
+    animation-name: moveBox;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+.ball {
+    margin-left: 100px;
+    margin-top: 100px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    
+    animation-name: MeraName;
+    animation-duration: 2s;
+    /* animation-delay: 10s; */
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+    animation-timing-function: linear;
+    animation-play-state: paused;
+}
+
+.ball:hover{
+    animation-play-state: running;
+}
+
+/* Search for ease, ease-in, ease-out, ease-in-out, cubic-bezier */
+
+.another-ball {
+    margin-left: 100px;
+    margin-top: 100px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: blue;
+    
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* Keyframes: Gives a set of instructions to computer, 
+how the object is going to move or going to change over 
+a period of time. */

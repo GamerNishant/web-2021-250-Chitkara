@@ -1,0 +1,153 @@
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+nav{
+    background-color: black;
+    padding:10px;
+}
+
+
+nav ul li{
+    display: inline-block;
+    margin-left: 230px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: white;
+    padding:5px
+}
+
+nav ul li a:hover{
+    color: black;
+    background-color: whitesmoke;
+    border-radius: 2px;
+    padding-bottom: 5px;
+}
+
+.gradient-background{
+    height: 170px;
+    background: linear-gradient(to top, #007bff, white);
+}
+
+.circle{
+    position: absolute;
+    top: 150px;
+    left: 45%;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.circle:hover{
+    animation-name: bounce;
+    animation-duration: 1s;
+    /* animation-delay: 10s; */
+    animation-iteration-count: infinite;
+    animation-timing-function: Linear;
+}
+
+.insta{
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    font-size: medium;
+    font-weight: 400px;
+}
+.instaUser{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: medium;
+    font-weight: 400px;
+}
+
+
+.btn-center{
+    display: flex;
+    justify-content: center;
+    margin-top:30px;
+}
+
+button{
+    height: 50px;
+    width: 120px;
+    margin: 5px;
+    font-size: medium;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.first-btn
+{
+    border: 1px solid grey;
+    
+}
+
+.first-btn:hover{
+    text-decoration: underline;
+    color: #007bff;
+}
+
+.second-btn{
+    color: white;
+    border: 1px solid grey;
+    background-color: rgb(94, 92, 125);
+}
+
+.second-btn:hover{
+    text-decoration: underline;
+}
+
+.content{
+    display: flex;
+}
+.main-content{
+    margin-top: 50px;
+    margin-left: 50px;
+    height: 200px;
+    width: 60%;
+}
+
+.location-card{
+    margin-left: 30px;
+    padding: 20px;
+    border: 1px solid grey;
+    height: 150px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgb(0,0,0,0.9);
+}
+
+.heading{
+    margin-bottom: 10px;
+}
+.ptag{
+    margin-bottom: 20px;
+}
+
+hr{
+    margin-bottom: 15px;
+    padding: 0;
+}
